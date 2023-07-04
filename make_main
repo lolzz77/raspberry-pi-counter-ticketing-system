@@ -1,0 +1,13 @@
+CFLAGS=-c -Wall -O2
+LIBS= -ltm1637 -llgpio -lpthread -lm
+
+all: main
+
+main: make_main main.o
+        $(CC) main.o $(LIBS) -o main
+
+main.o: main.c
+        $(CC) $(CFLAGS) main.c
+
+clean:
+        rm *.o demo
