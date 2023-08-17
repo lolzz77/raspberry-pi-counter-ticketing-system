@@ -1,6 +1,6 @@
 # How to run
 1. ```make```
-2. ```make -f make_make```
+2. ```make -f make_main```
 3. ```./main```
 
 if you get error 
